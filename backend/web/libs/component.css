@@ -1,0 +1,113 @@
+td {
+    white-space: nowrap;
+}
+
+tbody tr:nth-child(2n-1) {
+    transition: all .125s ease-in-out;
+	background-color: rgba(17, 32, 39, 0.46);
+}
+tbody tr:hover {
+    background-color: rgba(139, 49, 57, 0.3) !important;
+	background-color: rgba(17, 133, 110, 0.5) !important;
+	background-color: rgba(16, 90, 69, 0.31) !important;
+	background-color: rgba(11, 41, 62, 0.78) !important;
+	background-color: rgba(11, 41, 62, 0.78) !important;
+	background-color: rgba(60, 144, 180, 0.6) !important;
+}
+tbody tr:hover th,
+tbody tr:hover td,
+tbody tr:hover {
+	background-color: rgba(60, 144, 180, 0.45) !important;
+	background-color: rgb(26, 40, 46) !important;
+	background-color: rgb(11, 34, 41) !important
+}
+.sticky-col tr th:first-child{
+	/*padding: 8px;*/
+}
+.sticky-col tr th:first-child{
+	/*padding: 8px;*/
+	width: 30px;
+}
+.sticky-wrap th{
+	text-align: center;
+	font-weight: normal;
+	border: 1px solid rgba(221, 221, 221, 0.44);
+	font-size: 19px;
+	color: #E2E2E2;
+}
+
+.sticky-intersect{
+	display: none;
+}
+
+.sticky-wrap {
+	overflow-x: auto;
+	overflow-y: hidden;
+	position: relative;
+	width: 100%;
+}
+.sticky-wrap .sticky-thead,
+.sticky-wrap .sticky-col,
+.sticky-wrap .sticky-intersect {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all .1s ease-in-out;
+	width: auto;
+	background-color: #172D3A;
+	background-color: rgb(53, 59, 71);
+	/*display: none;*/
+}
+
+	.sticky-wrap .sticky-thead thead td:nth-child(1),
+	.sticky-wrap .sticky-thead thead td:nth-child(2){
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+	}
+	.sticky-wrap .sticky-thead thead td{
+		-moz-transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		text-align: center;
+	}
+	.sticky-wrap .sticky-thead {
+		box-shadow: 0 0.25em 0.1em -0.1em rgba(0,0,0,.125);
+		z-index: 100;
+		width: 100%;
+		background: #8b3139;
+		margin-top: 50px;
+		text-align: right;
+
+	}
+	.sticky-wrap .sticky-intersect {
+		opacity: 1;
+		z-index: 150;
+
+	}
+
+.sticky-wrap td {
+	box-sizing: border-box;
+	text-align: center;
+	border: 1px solid rgba(221, 221, 221, 0.44);
+}
+
+td.user-name {
+	text-transform: capitalize;
+}
+.sticky-wrap.overflow-y {
+	overflow-y: auto;
+	max-height: 50vh;
+}
+.sticky-thead{
+	opacity: 1;
+	display: block;
+	z-index:  -1;
+}
+
+.sticky-col tbody tr:last-child{
+	display: none;
+}

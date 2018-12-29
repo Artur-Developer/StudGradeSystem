@@ -1,0 +1,4 @@
+class_name: CodeTester
+modules:
+    enabled:
+        - \backend\tests\Helper\Code

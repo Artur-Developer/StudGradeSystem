@@ -1,0 +1,86 @@
+.section_elements_link_app{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.login-box, .register-box{
+    margin: 4% auto !important;
+}
+.section_elements_link_app .section_item{
+    width: 250px;
+    /*border:1px solid #bfbfbf;*/
+    display: flex;
+    flex-direction: column;
+}
+.section_elements_link_app .section_item .item_block a{
+}
+
+.section_elements_link_app .section_item .item_block input,
+.section_elements_link_app .section_item .item_block img{
+    width: 100%;
+}
+.section_elements_link_app .section_item .item_block img{
+    height:110px;
+}
+.section_elements_link_app .section_item .item_block{
+    flex-direction: column;
+    width: 250px;
+}
+.section_elements_link_app .section_item_1{
+    justify-content:flex-start;
+    align-items: flex-start;
+    /*align-content: stretch;*/
+}
+.section_elements_link_app .section_item_2{
+    align-items: flex-end;
+}
+.request_password_reset > a{
+    color: #ffdda2 !important;
+}
+.form-group .checkbox label {
+    	line-height: 1.6;
+    }
+
+@media(max-width:500px) {
+    .login-box{
+    	width: 100% !important;
+    	padding: 10px 0 100px !important;
+    }
+    .login-box-body, .register-box-body{
+    	padding: 35px 12px !important;
+    }
+    .login-logo, .register-logo{
+    	font-size: 25px !important;
+    }
+    .section_elements_link_app .section_item .item_block{
+    	width: 170px;
+    }
+    .section_elements_link_app .section_item .item_block img{
+    	height: 80px;
+    }
+    .section_elements_link_app .section_item .item_block input, .section_elements_link_app .section_item .item_block img{
+    	font-size: 15px !important;
+    }
+    .form-group .checkbox label {
+    	line-height: 2;
+    }
+    
+}
+
+@media(max-width:339px) {
+	.login-logo, .register-logo{
+    	font-size: 23px !important;
+    }
+	.section_elements_link_app .section_item .item_block input{
+		padding: 10px 5px;
+	}
+    .section_elements_link_app .section_item .item_block{
+    	width: 160px;
+    }
+    .section_elements_link_app .section_item .item_block img{
+    	height: 70px;
+    }
+    .section_elements_link_app .section_item .item_block input, .section_elements_link_app .section_item .item_block img{
+    	font-size: 14px !important;
+    }
+}
